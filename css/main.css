@@ -1,0 +1,214 @@
+/* Main CSS file */
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Open Sans", sans-serif;
+  background-image: linear-gradient(to right top, #9e9eff, #8c9dfc, #799cf9, #659bf5, #4f99f0, #619eed, #71a2eb, #7ea7e8, #a2b5e7, #bec4e6, #d4d4e6, #e6e6e6);
+  display: flex;
+  justify-content: center;
+}
+p{
+  text-align: center;
+  color: #ffff;
+}
+h1{
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.sign-in, .signed-in{
+  height: 150px;
+  margin-bottom: -40px;
+  z-index: 0;
+}
+
+.sign-in::after{
+  content:"";
+  position: relative;
+  display: block;
+  bottom: 20px;
+  width: 100%;
+  height: 80px;
+  background-color: #514bc6;
+  transform: skewY(-5deg);
+  z-index: 2;
+  
+}
+
+.form, .signed-in{
+ 
+  width:400px;
+  height: 350px;
+  padding: 0px 45px 40px;
+  background: #514bc6;
+  border-radius: 0 0 20px 20px;
+  z-index: 10;
+  
+}
+
+.signed-in{
+
+  background-color: #514bc6 !important;
+  height: 450px !important;
+
+}
+
+
+
+.form-container, .signed-in{
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  background-color: #ffffff;
+  border-radius: 20px;
+ 
+  
+}
+
+input{
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  border-radius:7px;
+  display: block;
+  font-size: .875rem;
+  margin-bottom: .35rem;
+  padding: .275rem;
+  z-index: 0;
+}
+
+label{
+  color: #ffff;
+  font-size: .875rem;
+
+}
+
+#submit-btn{
+  position: relative;
+  left: 20%;
+  border-radius: 30px;
+  width: 60%;
+  color: #514bc6;
+}
+input[type="checkbox"] {
+  display: inline-block;
+  width: 25px;
+  height: auto;
+  transform: scale(2);
+  margin-bottom: 30px;
+  margin-right: 15px;
+}
+
+input:invalid {
+  border-color: red;
+  background-color: rgb(234, 205, 205);
+}
+
+/* .failed-email{
+  border-color: red;
+  background-color: rgb(234, 205, 205);
+
+  
+}
+*/
+
+.failed-password{ 
+  border-color: red !important;
+  background-color: rgb(234, 205, 205) !important;
+
+} 
+
+
+
+.signed-in-text{
+  position:relative;
+  top:90px !important;
+  font-size: 18px;
+  color: #ffff;
+  text-align: center;
+}
+
+.icon{
+  position: relative;
+  width: 60%;
+  top: 15%;
+  left: 22%;
+  
+}
+
+.close-icon{
+  position:  relative;
+  z-index: 10;
+  background-color: #ffff;
+  width: 40px;
+  height:40px;
+  padding-left: 20px;
+  padding-top: 20px;
+  border-radius: 100%;
+  left:100%;
+  margin-top: -30px;
+  
+
+}
+
+.password-container{
+  position: relative;
+}
+
+
+
+
+.show-eye-icon{
+  position: absolute;
+  top: 35px;
+  right: 0px;
+  height: 25px;
+  width: auto;
+  cursor: pointer;
+  
+}
+  
+
+@media screen and (max-width: 400px) {
+  
+
+  .form, .signed-in{
+ 
+  width: auto;
+  }
+
+.form-container, .signed-in{
+  width: inherit;
+
+  margin-right: 20px;
+  margin-left: 20px;
+
+}
+
+.icon{
+  
+  left: 10%;
+  
+}
+
+
+}
+
+@media screen and (max-width: 700px) {
+  
+
+  .form, .signed-in{
+ 
+  width: auto;
+  }
+
+.form-container, .signed-in{
+  width: inherit;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+}
